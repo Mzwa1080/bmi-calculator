@@ -7,7 +7,7 @@ function calculateBMI() {
 
     if (weight !== '' && height !=='' ) {
 
-        let bmi = (weight / (height * height)) * 10000;
+        let bmi = weight / (height * height);
         // I must convert the decimals in to two decimal place
         bmi = bmi.toFixed(2);
         if(bmi < 18.5){
